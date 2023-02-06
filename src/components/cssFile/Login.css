@@ -1,0 +1,37 @@
+.loginpage{
+    margin : auto;
+    width: 980px; height: 300px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.userId label , .userPw label{
+    font-size: 1.11rem;
+    font-weight: 400;
+
+}
+
+.userId input , .userPw input {
+    width: 165px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+
+.loginpage .loginBtn input{
+    margin:20px 30px;
+
+    width: 100px;
+    height: 50px;
+    border: 1px solid coral;
+    background-color: blanchedalmond; color: black;
+    border-radius: 5px;
+    
+}

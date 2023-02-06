@@ -12,6 +12,8 @@ const cartSlice = createSlice({
             alert('장바구니에 동일한 상품이 있습니다.');
         }else{
             state = state.push(action.payload);
+            alert(`장바구니에 ${action.payload.product_name}(이)가 추가 되었습니다.`);
+
         }},
         deleteCart : (state, action)=>{
             const num = state.findIndex((ele)=> ele.id === action.payload[0].id)
