@@ -1,16 +1,21 @@
 import './App.css';
 import CartList from './components/CartList';
-import Counter from './components/Counter';
+import Login from './components/Login';
 import Nav from './components/Nav';
 import ProductList from './components/ProductList';
+import {Routes, Route, BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-       <Nav/>
-       <ProductList/>
-       <CartList />
-        {/* <Counter/> */}
+      <BrowserRouter>
+      <Nav/>
+       <Routes>
+          <Route path='/' element={<ProductList />}/>
+          <Route path='/cart' element={<CartList />}/>
+          <Route path='/login' element={<Login />}/>
+       </Routes>
+      </BrowserRouter>
     </div>
   );
 }

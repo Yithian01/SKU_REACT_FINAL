@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import CartItem from './CartItem';
+import './cssFile/CartList.css'
 
 const CartList = () => {
 
@@ -9,7 +10,7 @@ const CartList = () => {
         return <CartItem key={item.id} item={item}/>}) 
         : <div className='cart-empty'>장바구니가 비어있습니다.</div>
     return (
-        <div>
+        <div className='cart-list'>
             <h2 className='cart-list-title'>장바구니</h2>
             {cartItem}
         </div>

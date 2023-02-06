@@ -11,14 +11,16 @@ const cartSlice = createSlice({
         if(equalItem >= 0 ){
             alert('장바구니에 동일한 상품이 있습니다.');
         }else{
-            console.log(action.payload);
             state = state.push(action.payload);
         }},
-        deleteCart : ()=>{
-
+        deleteCart : (state, action)=>{
+            const num = state.findIndex((ele)=> ele.id === action.payload[0].id)
+            state = state.splice(num,1);
         },
     },  
 })
+
+
 
 export const { addCart, deleteCart } = cartSlice.actions    // 액션 생성함수 
 export default cartSlice.reducer

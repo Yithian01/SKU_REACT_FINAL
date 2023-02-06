@@ -5,3 +5,8 @@
     margin: auto;
     text-align: left;
 }
+
+.product-list-title{
+    text-align: center;
+    margin-bottom: 24px;
+}
