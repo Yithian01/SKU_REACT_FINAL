@@ -9,7 +9,7 @@ const Counter = () => {
         <div>
             <button onClick={()=>dispatch(increment(2))}>증가</button>
             <span>  {count}  </span>
-            <button onClick={()=>dispatch(decrement(1))}>감소</button>
+            <button onClick={()=>dispatch(decrement(2))}>감소</button>
         </div>
     );
 };
