@@ -5,7 +5,7 @@ import { addCart } from '../store/cart/cartSlice';
 import { useNavigate } from 'react-router-dom';
 //  사진이나 상품이름을 클릭하면 goToDetail함수가 userRedirect.jsx로 보내고 거기서 user값이 있다면 (로그인 되어 있다면 Detail로 보내고 아니면) ㅇ
 
-const ProductItem = ({ item}) => {
+const ProductItem = ({item}) => {
     const dispatch = useDispatch()
     const navigate = useNavigate();
     const goToDetail = () =>{

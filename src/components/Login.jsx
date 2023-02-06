@@ -17,7 +17,7 @@ const Login = () => {
 
     return (
         <div className='loginpage'>
-            <form onSubmit={(e) => loginUser(e)}  className=''>
+            <form onSubmit={(e) => loginUser(e)}  className='loginForm'>
                 <div className='userId'>
                     <div><label htmlFor="userId">아이디</label></div>
                     <div><input id='userId' type="text" placeholder='아이디입력' /></div>

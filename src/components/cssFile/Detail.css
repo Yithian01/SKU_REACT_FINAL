@@ -1,0 +1,7 @@
+.detailPage{
+    width: 980px; height: 600px;
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 7.5px;
+    text-align: center;
+}
