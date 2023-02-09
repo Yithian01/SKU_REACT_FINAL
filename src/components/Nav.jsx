@@ -9,14 +9,28 @@ const Nav = () => {
     const user = useSelector(state=>state.user.value);
     const dispatch =useDispatch();
     const navigator =useNavigate();
+    const onSearch = (e)=>{
+        if(e.key === 'Enter'){
+            navigator(`?q=${e.target.value}`)
+            
+        }
+    }
     
     return (
         <nav className='nav'>
-            <span className='nav-title'><Link to='/'>SHOP</Link></span>
+            <span className='nav-title'><Link to='/'><img src='./img/logo.png' alt="로고" /></Link></span>
+            <div className='search-box'>
+                <input type="text" placeholder='찿는 상품을 입력하세요' onKeyUp={onSearch}/>
+            </div>
+            <div>
             <span >
                 <Link to='/cart'>
                 <i className="fas fa-shopping-cart">
-                    <div className='cart-amount'>{cart.length}</div>
+                {
+                    user ? 
+                    <div className='cart-amount'>{cart.length}</div>:
+                    <div className='cart-amount'>0</div>
+                }
                 </i>
                 </Link>
             </span>
@@ -28,6 +42,7 @@ const Nav = () => {
 
                 }
             </span>
+            </div>
         </nav>
     );
 };

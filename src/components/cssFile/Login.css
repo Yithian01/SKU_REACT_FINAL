@@ -1,37 +1,47 @@
 .loginpage{
-    margin : auto;
-    width: 980px; height: 300px;
-    border: 1px solid #000;
+    margin : 160px auto ;
+    width: 980px; height: 450px;
+    border: none;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: #d5cecc;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.userId label , .userPw label{
-    font-size: 1.11rem;
-    font-weight: 400;
 
+.loginpage.container{
+    padding: 0;
+    margin: 200px auto;
+
+}
+.user-box{
+    margin-bottom: 3px;
+}
+
+.userId label , .userPw label{
+    font-size: 1.12rem;
+    font-weight: 800;
 }
 
 .userId input , .userPw input {
     width: 165px;
     height: 25px;
     border-radius: 2px;
-    border: 1px solid #ddd;
+    border: none;
     padding: 2px;
 }
 
 
 .loginpage .loginBtn input{
     margin:20px 30px;
-
     width: 100px;
-    height: 50px;
-    border: 1px solid coral;
-    background-color: blanchedalmond; color: black;
+    height: 45px;
+    border: none;
+    background-color: #f5f3f2; color: black;
     border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 800;
     
 }

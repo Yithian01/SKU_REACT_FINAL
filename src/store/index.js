@@ -3,6 +3,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import cartSlice from './cart/cartSlice'
 import userSlice from './user/userSlice'
 import { persistStore, persistReducer } from 'reduxjs-toolkit-persist'  
+import productSlice from './product/productSlice'
 // reducer가 실행될 때 persist가 같이 같이 묶어서 사용
 import storage from 'reduxjs-toolkit-persist/lib/storage' 
 // import storageSession from 'reduxjs-toolkit-persist/lib/storage/session' // 세션스토리지
@@ -15,7 +16,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   cart:cartSlice,
-  user:userSlice
+  user:userSlice,
+  product:productSlice,
 })
 
 // 위의 두 개의 객체를 묶어서 사용할 수 있게 해준다.

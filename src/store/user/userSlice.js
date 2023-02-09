@@ -10,15 +10,12 @@ const userSlice = createSlice({
   reducers: {   // 상태 변경을 어떻게 실행될지 지정하는 
       login: (state,action) =>{
         state.value = action.payload
-
       },
       logout: (state,action) =>{
         state.value = action.payload
       },
     },  
-
 })
-
 
 
 export const { login, logout } = userSlice.actions    // 액션 생성함수 

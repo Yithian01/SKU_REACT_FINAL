@@ -2,13 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 90px;
     margin-bottom: 50px;
     padding: 0 150px ;
-    background-color: rgb(121, 116, 116);
+    background-color: #f3f3f3;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 5000;
+    box-sizing: border-box;
 }
 
 .nav-title {
@@ -16,9 +21,14 @@
     font-size: 40px;
 }
 
+.nav-title img {
+    width: 110px;
+}
+
 .fas{
     position: relative;
-    font-size: 40px;
+    font-size: 30px;
+    color :#000000;
 }
 
 .cart-amount{
@@ -29,10 +39,24 @@
     height: 15px;
     border-radius: 3px;
     background-color: rgb(255, 163, 132); 
-    color: #fff;
-    font-size: 1;
+    color: #140310;
+    font-size: 20;
     font-weight: normal;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.search-box{
+    flex: 0 1 50%;
+    
+}
+
+.search-box input{
+    width: 100%; height: 40px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.user{color: #000000;}

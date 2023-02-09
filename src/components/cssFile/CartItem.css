@@ -6,6 +6,7 @@
     height: 65px;
     border-radius: 5px;
     margin-bottom: 8px;
+    border-bottom: 1px solid #9f5b5b;
 }
 
 .cart-item-img{

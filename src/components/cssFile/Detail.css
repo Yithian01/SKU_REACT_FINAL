@@ -1,7 +1,56 @@
 .detailPage{
     width: 980px; height: 600px;
-    margin: auto;
-    border: 1px solid #000;
+    margin: auto; 
+    border: none;
     border-radius: 7.5px;
+    background-clip: content-box;
+    background-color:#f5f3f2 ;  
     text-align: center;
+    position:relative;
 }
+.detailPage.container{padding-top: 160px;}
+.detail-img img{
+    margin-top: 20px;
+    width: 230px;
+}
+
+.detail-info{
+    box-sizing: border-box;
+    border:none;
+    background-color: #e2e2e2;
+    border-radius: 7.5px;
+    width: 88%;
+    height: 90%;
+    margin: 20px auto;
+    
+}
+.detail-name{
+    padding: 25px;
+}
+.detail-id{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.detail-info .detail-discription{
+    width: 80%;
+    height: 60%;
+    margin: 30px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 1500;
+    background-color: #73cd62;
+    text-align: left;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+}
+
